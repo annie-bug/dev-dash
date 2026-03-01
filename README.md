@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 DevDash: AI Developer Persona Engine
 
-## Getting Started
+DevDash is a high-performance frontend analytics dashboard that transforms standard GitHub profiles into deep-dive architectural reviews. By entering a GitHub username, the application fetches real-time repository data and leverages the Google Gemini API to generate a professional "Executive Summary" of the developer's tech stack, core strengths, and growth areas.
 
-First, run the development server:
 
-```bash
+<img width="1920" height="1080" alt="Screenshot 2026-03-01 134017" src="https://github.com/user-attachments/assets/a60c8c14-19c2-4cc8-85a9-79daad07baa7" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-03-01 134058" src="https://github.com/user-attachments/assets/1ced8208-e202-4337-9717-999af284c4b0" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-03-01 134117" src="https://github.com/user-attachments/assets/d1d500a2-a689-4fcd-b818-c2369e565399" />
+
+
+## ✨ Features
+
+* **🧠 AI-Powered Architectural Reviews:** Utilizes Google's `gemini-2.5-flash` model with strict JSON schema parsing to generate accurate, professional developer personas.
+* **⚡ Optimized Search:** Implements custom React hooks for debounced URL-syncing, preventing rate-limit blocks and ensuring a smooth user experience.
+* **📊 Interactive Data Visualization:** Features dual side-by-side Recharts (Donut and Radial Bar charts) to dynamically map repository star distribution and language ecosystems.
+* **💎 Premium Glassmorphism UI:** Built completely with pure Tailwind CSS v4, featuring glowing omnibars, 3D hover states, and smooth Recharts animations.
+* **🔄 Smart Caching & State:** Powered by TanStack Query (React Query) for flawless loading states, error handling, and memory caching without unnecessary API calls.
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+* **State & Data Fetching:** [TanStack Query](https://tanstack.com/query/latest)
+* **AI Engine:** [Google Gemini API](https://ai.google.dev/) 
+* **Data Visualization:** [Recharts](https://recharts.org/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+
+## 🚀 Getting Started (Local Development)
+
+Want to run DevDash locally? Follow these steps:
+
+### 1. Clone the repository
+\`\`\`bash
+git clone https://github.com/your-username/dev-dash.git
+cd dev-dash
+\`\`\`
+
+### 2. Install dependencies
+\`\`\`bash
+npm install
+\`\`\`
+
+### 3. Set up Environment Variables
+Create a `.env.local` file in the root of your project and add your Google Gemini API key:
+\`\`\`text
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
+\`\`\`
+
+### 4. Run the development server
+\`\`\`bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+\`\`\`
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
